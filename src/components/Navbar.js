@@ -8,7 +8,7 @@ const Navbar = ({history}) => {
 
   const loginUser = () => {
     localStorage.setItem('token', 'some-login-token');
-    history.push('/profile/shashank');
+    history.push('/profile/Shashank');
   };
 
   const logoutUser = () => {
@@ -40,7 +40,7 @@ const Navbar = ({history}) => {
           <div className='navbar-start'>
             <NavLink 
               className='navbar-item' 
-              activeClassName='is-active' 
+              exact activeClassName='is-active' 
               to='/'
             >
               Home
